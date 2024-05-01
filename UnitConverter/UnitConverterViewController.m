@@ -32,7 +32,16 @@
 
     NSString *resultString = [[NSString alloc]
                               initWithFormat: @"Celsius %f", celsius];
-    _resultLabel.text = resultString;
+    _tempResultLabel.text = resultString;
 
 }
+
+- (IBAction)convertDistance:(id)sender {
+    double miles = [_distanceText.text doubleValue];
+    double kilometers = miles * 1.60934;
+
+    NSString *resultString = [NSString stringWithFormat:@"Kilometers: %f", kilometers];
+    _distanceResultLabel.text = resultString;
+}
+
 @end

@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface UnitConverterViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *tempText;
-@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UITextField *distanceText;
+
+@property (weak, nonatomic) IBOutlet UILabel *tempResultLabel;
+@property (weak, nonatomic) IBOutlet UILabel *distanceResultLabel;
+
 - (IBAction)convertTemp:(id)sender;
+- (IBAction)convertDistance:(id)sender;
 
 @end
